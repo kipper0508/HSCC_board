@@ -19,6 +19,9 @@
                                     <th>Photo</th>
                                     <th>Comment</th>
                                     <th>Grade</th>
+                                    <th>FB</th>
+                                    <th>IG</th>
+                                    <th>Git</th>
                                 </tr>
                             </thead>
                             <tfoot>
@@ -27,6 +30,9 @@
                                     <th>Photo</th>
                                     <th>Comment</th>
                                     <th>Grade</th>
+                                    <th>FB</th>
+                                    <th>IG</th>
+                                    <th>Git</th>
                                 </tr>
                             </tfoot>
                             <tbody>
@@ -36,6 +42,9 @@
                                     <td><img src="{{$student->photo}}" style="height: 120px;width: 120px;object-fit: cover;border-radius: 50%;" onerror="this.src = 'img\\member\\default.png';"></img></td>
                                     <td>{{$student->comment}}</td>
                                     <td>{{$student->student_grade}}</td>
+                                    <th>{{$student->facebook}}</th>
+                                    <th>{{$student->instagram}}</th>
+                                    <th>{{$student->github}}</th>
                                     <td>
                                         <form method="post" action="/memberupdate_preview">
                                             {{ csrf_field() }}

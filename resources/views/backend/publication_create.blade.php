@@ -36,7 +36,7 @@
                             <option value="Dec">12</option>
                         </select>
                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                            <button type="submit" class="btn btn-danger">Create</a>
+                            <button type="submit" class="btn btn-success">Create</a>
                         </div>
                     </form>
                 </div>

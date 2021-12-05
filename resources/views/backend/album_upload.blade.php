@@ -18,7 +18,7 @@
                             <img id="preview" src="#" alt=""/>
                         </label>
                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                            <button type="submit" class="btn btn-danger">Upload</a>
+                            <button type="submit" class="btn btn-success">Upload</a>
                         </div>
                     </form>
                 </div>

@@ -21,8 +21,9 @@
                             <option value="0" selected="selected">False</option>
                             @endif
                         </select>
-                        <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                            <button type="submit" class="btn btn-danger">Update</a>
+                        <div class="d-flex align-items-center mt-4 mb-0">
+                            <button type="submit" class="btn btn-warning" style="margin:10px 5px 5px 5px;">Update</button>
+                            <button type="submit" class="btn btn-primary" style="margin:10px 5px 5px 5px;" onclick="history.back()">Cancel</button>
                         </div>
                     </form>
                 </div>

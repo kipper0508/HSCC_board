@@ -329,6 +329,10 @@ class ManagerController extends Controller
                 if(academic_years::where('year', '=', $request->grade)->count()){
                     $student->student_grade = $request->grade;
                 }
+                
+                $student->facebook = $request->facebook;
+                $student->instagram = $request->instagram;
+                $student->github = $request->github;
 
                 if($request->photo){
                     $student->photo = $imagePath;

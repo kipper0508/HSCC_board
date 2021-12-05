@@ -59,9 +59,9 @@
           </div>
         </div>
 
-        
+
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-        @foreach($albums as $photo)
+          @foreach($albums as $photo)
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="{{$photo->path}}" class="img-fluid" alt="">
@@ -75,7 +75,7 @@
           </div>
           @endforeach
         </div>
-        
+
 
       </div>
     </section><!-- End Introduction Section -->
@@ -218,37 +218,37 @@
         </div>
 
         @foreach($years as $year)
-        <div class="section-title">
-          <h3>{{$year->year}}</h3>
-        </div>
-
-        @if(!$students[$loop->index]->isEmpty())
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper" style="height:236px;">
-            @foreach($students[$loop->index] as $student)
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{{$student->photo}}" class="testimonial-img" onerror="this.src = 'img\\member\\default.png';">
-                <h3>{{$student->name}}</h3>
-                <h4>{{$student->comment}}</h4>
-                <p style="font-size:22px;">
-                  @if($student->facebook)
-                  <a href="{{$student->facebook}}" class="facebook"><i class="bx bxl-facebook"></i></a>
-                  @endif
-                  @if($student->instagram)
-                  <a href="{{$student->instagram}}" class="instagram"><i class="bx bxl-instagram"></i></a>
-                  @endif
-                  @if($student->github)
-                  <a href="{{$student->github}}" class="github"><i class="bx bxl-github"></i></a>
-                  @endif
-                </p>
-              </div>
-            </div>
-            @endforeach
+          <div class="section-title">
+            <h3>{{$year->year}}</h3>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        @endif
+
+          @if(!$students[$loop->index]->isEmpty())
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper" style="height:236px;">
+              @foreach($students[$loop->index] as $student)
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="{{$student->photo}}" class="testimonial-img" onerror="this.src = 'img\\member\\default.png';">
+                  <h3>{{$student->name}}</h3>
+                  <h4>{{$student->comment}}</h4>
+                  <p style="font-size:22px;">
+                    @if($student->facebook)
+                    <a href="{{$student->facebook}}" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    @endif
+                    @if($student->instagram)
+                    <a href="{{$student->instagram}}" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    @endif
+                    @if($student->github)
+                    <a href="{{$student->github}}" class="github"><i class="bx bxl-github"></i></a>
+                    @endif
+                  </p>
+                </div>
+              </div>
+              @endforeach
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          @endif
         @endforeach
 
         @if($students)
